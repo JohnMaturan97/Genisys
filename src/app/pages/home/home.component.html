@@ -1,3 +1,8 @@
-<slider [items]="movies"></slider>
-<!-- <pre>{{ movies | json }}</pre> -->
-<!-- <pre>{{ movies | json }}</pre> -->
+<slider [items]="popularMovies"></slider>
+
+<items-banner [items]="topRatedMovies" title="Top Rated Movies"></items-banner>
+<items-banner [items]="nowPlayingMovies" title="Now Playing Movies"></items-banner>
+<items-banner [items]="upcomingMovies" title="Incoming Movies"></items-banner>
+<items-banner [items]="popularTvShows" title="Popular Tv Shows"></items-banner>
+
+
