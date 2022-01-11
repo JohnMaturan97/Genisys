@@ -7,24 +7,24 @@ import { MovieComponent } from './pages/movie/movie.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'movies',
-    component: MoviesComponent
+    component: MoviesComponent,
   },
   {
     path: 'movie/:id',
-    component: MovieComponent
+    component: MovieComponent,
   },
   {
     path: '**',
     redirectTo: '',
-  }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
